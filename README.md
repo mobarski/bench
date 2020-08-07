@@ -16,7 +16,7 @@ API consists of only 3 methods:
 ## Simple example
 
 ```v
-import bench
+import mobarski.bench
 mut b := bench.new('Simple Benchmark')
 for _ in 0..10 {
 	... do something ...
@@ -36,7 +36,7 @@ Simple Benchmark..........
 ## Example with rate calculation
 
 ```v
-import bench
+import mobarski.bench
 n_ops := 1_000_000
 n_runs := 20
 mut b := bench.new('Rate Calculation Benchmark runs=$n_runs ')
@@ -61,8 +61,8 @@ Rate Calculation Benchmark runs=20 ....................
 ## Real life example
 
 ```v
-import bisect
-import bench
+import mobarski.bisect
+import mobarski.bench
 
 fn bench_first(runs int, size int) {
 	// input data
